@@ -1,31 +1,24 @@
 :root {
-  /* Base */
   --color-background: #0b0f14;
   --color-surface: #11161d;
   --color-surface-hover: #171e27;
 
-  /* Text */
-  --color-text: #eef2f7;
+  --color-text: #f1f5f9;
   --color-text-muted: #8b98a7;
 
-  /* Brand */
-  --color-primary: #5b8def;
-  --color-primary-hover: #79a3ff;
+  --color-primary: #4f8cff;
+  --color-primary-hover: #6ba0ff;
 
-  /* Secondary / neutral */
-  --color-secondary: #657386;
-  --color-highlight: #172236;
+  --color-secondary: #64748b;
+  --color-highlight: #172338;
 
-  /* Semantic */
-  --color-success: #3dcc8f;
-  --color-warning: #e9a15a;
-  --color-danger: #ed6b75;
+  --color-success: #3ccf91;
+  --color-warning: #f0a35b;
+  --color-danger: #ef6b73;
 
-  /* Borders */
-  --color-border: #27313d;
-  --color-border-subtle: #1b232d;
+  --color-border: #26313d;
+  --color-border-subtle: #1b242e;
 
-  /* Effects */
   --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
@@ -53,6 +46,13 @@ a {
 a:hover,
 a:focus-visible {
   text-decoration: underline;
+}
+
+button,
+input,
+select,
+textarea {
+  color: var(--color-text);
 }
 
 img {
@@ -90,6 +90,17 @@ button {
   z-index: 10;
 }
 
+.site-header,
+.sidebar,
+.main-content,
+.site-footer,
+.topic-group,
+.info-card,
+.lesson-figure,
+.quiz-block {
+  background: var(--color-surface);
+}
+
 .brand-wrap {
   display: flex;
   align-items: center;
@@ -117,7 +128,8 @@ button {
 }
 
 .header-links a.is-current,
-.nav-link.is-current {
+.nav-link.is-current,
+.sub-link.is-current {
   background: var(--color-highlight);
   color: var(--color-primary);
 }
@@ -138,6 +150,13 @@ button {
   box-shadow: var(--shadow-soft);
 }
 
+.topic-group {
+  border: 1px solid var(--color-border);
+  border-radius: 0.8rem;
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
 .nav-list,
 .topic-list,
 .lesson-subnav {
@@ -153,7 +172,7 @@ button {
 .topic-group {
   border: 1px solid var(--color-border);
   border-radius: 0.8rem;
-  background: #f9fafb;
+  background: var(--color-surface);
   overflow: hidden;
 }
 
@@ -170,6 +189,11 @@ button {
   text-align: left;
   font: inherit;
   cursor: pointer;
+}
+
+.topic-toggle:hover,
+.topic-toggle:focus-visible {
+  background: var(--color-surface-hover);
 }
 
 .nav-heading {
@@ -199,7 +223,13 @@ button {
   color: var(--color-text);
   font-weight: 600;
 }
-
+.nav-link:hover,
+.sub-link:hover,
+.nav-link:focus-visible,
+.sub-link:focus-visible {
+  background: var(--color-surface-hover);
+  text-decoration: none;
+}
 .topic-list {
   display: grid;
   gap: 0.35rem;
@@ -220,6 +250,11 @@ button {
   padding: 0.55rem 0.7rem;
   font-size: 0.95rem;
   color: var(--color-text-muted);
+}
+
+.sub-link:hover,
+.sub-link:focus-visible {
+  color: var(--color-text);
 }
 
 .topic-group .topic-list,
@@ -299,6 +334,14 @@ button {
   color: var(--color-surface);
 }
 
+.primary-button:hover,
+.primary-button:focus-visible,
+.nav-button:hover,
+.nav-button:focus-visible {
+  background: var(--color-primary-hover);
+  text-decoration: none;
+}
+
 .secondary-button,
 .nav-button-secondary {
   background: transparent;
@@ -306,17 +349,19 @@ button {
   color: var(--color-primary);
 }
 
-.primary-button:hover,
-.primary-button:focus-visible,
 .secondary-button:hover,
 .secondary-button:focus-visible,
-.nav-button:hover,
-.nav-button:focus-visible,
+.nav-button-secondary:hover,
+.nav-button-secondary:focus-visible {
+  background: var(--color-highlight);
+  text-decoration: none;
+}
+
 .answer-option:hover,
 .answer-option:focus-visible,
 .nav-toggle:hover,
 .nav-toggle:focus-visible {
-  filter: brightness(0.98);
+  background: var(--color-surface-hover);
   outline: none;
 }
 
@@ -347,7 +392,7 @@ button {
 }
 
 .info-card {
-  background: #f9fafb;
+  background: var(--color-surface-hover);
   border: 1px solid var(--color-border);
   border-radius: 1rem;
   padding: 1.25rem;
@@ -414,7 +459,7 @@ button {
 .lesson-figure {
   margin: 2rem 0;
   padding: 1rem;
-  background: #f8fafb;
+  background: var(--color-surface-hover);
   border-radius: 1rem;
   border: 1px solid var(--color-border);
 }
@@ -456,6 +501,10 @@ button {
   border-color: var(--color-border);
   text-align: left;
   justify-content: flex-start;
+}
+
+.answer-option:disabled {
+  opacity: 1;
 }
 
 .answer-option.is-correct {
