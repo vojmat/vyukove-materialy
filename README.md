@@ -1,6 +1,6 @@
 # Výukové materiály
 
-Jednoduchý statický web pro výuku informatiky v češtině pro studenty ve věku 15–22 let.
+Jednoduchý statický web pro výuku informatiky v pro studenty ve věku 15–22 let.
 
 ## Co obsahuje
 
