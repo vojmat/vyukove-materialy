@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Výukové materiály</title>
+    <meta
+      name="description"
+      content="Jednoduchý vzdělávací web pro výuku informatiky v češtině."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-wrap">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="sidebar"
+            aria-label="Otevřít navigaci"
+          >
+            ☰
+          </button>
+          <a class="brand" href="index.html">Výukové materiály</a>
+        </div>
+        <nav class="header-links" aria-label="Sekundární navigace">
+          <a href="index.html" class="is-current">Domů</a>
+          <a href="lesson.html">Lekce</a>
+        </nav>
+      </header>
+
+      <div class="content-layout">
+        <aside class="sidebar" id="sidebar" aria-label="Hlavní navigace">
+          <nav>
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link is-current">Domů</a></li>
+
+              <li class="topic-group is-open">
+                <button class="topic-toggle" type="button" aria-expanded="true">
+                  <span class="nav-heading">Témata</span>
+                  <span class="toggle-icon" aria-hidden="true">▾</span>
+                </button>
+
+                <ul class="topic-list">
+                  <li class="topic-item">
+                    <a href="lesson.html" class="nav-link">Hardware</a>
+                    <ul class="lesson-subnav">
+                      <li><a href="lesson.html" class="sub-link">Co je hardware</a></li>
+                      <li><a href="lesson.html" class="sub-link">Procesor</a></li>
+                      <li><a href="lesson.html" class="sub-link">RAM</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="topic-item">
+                    <a href="lesson.html" class="nav-link">Software</a>
+                    <ul class="lesson-subnav">
+                      <li><a href="lesson.html" class="sub-link">Operační systémy</a></li>
+                      <li><a href="lesson.html" class="sub-link">Aplikace</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="topic-item">
+                    <a href="lesson.html" class="nav-link">Sítě</a>
+                    <ul class="lesson-subnav">
+                      <li><a href="lesson.html" class="sub-link">Internet</a></li>
+                      <li><a href="lesson.html" class="sub-link">IP adresa</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <main class="main-content">
+          <section class="hero">
+            <div class="hero-text">
+              <p class="eyebrow">Informatika pro začátečníky</p>
+              <h1>Nejjednodušší cesta k pochopení počítače a internetu</h1>
+              <p>
+                Na tomto webu si můžete přečíst přehledné lekce, procvičit si je
+                krátkými otázkami a rychle pochopit základy digitálního světa.
+              </p>
+              <div class="hero-actions">
+                <a class="primary-button" href="lesson.html">Začít lekci</a>
+                <a class="secondary-button" href="#themes">Prohlédnout témata</a>
+              </div>
+            </div>
+            <figure class="hero-illustration">
+              <img src="images/hardware.svg" alt="Ilustrace moderního počítačového hardwaru" />
+            </figure>
+          </section>
+
+          <section id="themes" class="section-block">
+            <div class="section-header">
+              <p class="eyebrow">Témata</p>
+              <h2>Přehled hlavních oblastí</h2>
+            </div>
+
+            <div class="cards-grid">
+              <article class="info-card">
+                <h3>Hardware</h3>
+                <p>
+                  Co tvoří počítač, jak funguje procesor, paměť a grafická karta.
+                </p>
+                <a href="lesson.html">Zobrazit lekci</a>
+              </article>
+
+              <article class="info-card">
+                <h3>Software</h3>
+                <p>
+                  Rozdíl mezi operačním systémem, programy a aplikacemi v každodenním životě.
+                </p>
+                <a href="lesson.html">Zobrazit lekci</a>
+              </article>
+
+              <article class="info-card">
+                <h3>Sítě</h3>
+                <p>
+                  Jak se data přesouvají po internetu, co je IP adresa a proč jsou sítě důležité.
+                </p>
+                <a href="lesson.html">Zobrazit lekci</a>
+              </article>
+            </div>
+          </section>
+
+          <section class="section-block lesson-overview">
+            <div class="section-header">
+              <p class="eyebrow">Lekce</p>
+              <h2>Výběr témat pro další práci</h2>
+            </div>
+
+            <ul class="lesson-list">
+              <li>
+                <a href="lesson.html">Co je hardware</a>
+                <span>1. úvod</span>
+              </li>
+              <li>
+                <a href="lesson.html">Procesor a paměť</a>
+                <span>2. témata</span>
+              </li>
+              <li>
+                <a href="lesson.html">Operační systémy</a>
+                <span>3. témata</span>
+              </li>
+              <li>
+                <a href="lesson.html">Internet a sítě</a>
+                <span>4. témata</span>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+
+      <footer class="site-footer">
+        <p>© <span id="year">2026</span> Výukové materiály</p>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
