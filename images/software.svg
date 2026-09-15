@@ -1,0 +1,16 @@
+<svg width="640" height="420" viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustrace software a hardware</title>
+  <desc id="desc">Symboly počítačových komponent a software.</desc>
+  <rect width="640" height="420" fill="#F7F4EC"/>
+  <rect x="90" y="120" width="180" height="170" rx="16" fill="#FFFFFF" stroke="#3B6EA8" stroke-width="5"/>
+  <rect x="120" y="150" width="120" height="28" rx="8" fill="#E4EDF6"/>
+  <rect x="120" y="195" width="120" height="22" rx="8" fill="#D8E7F3"/>
+  <rect x="120" y="227" width="95" height="22" rx="8" fill="#CFE2C8"/>
+  <rect x="330" y="110" width="220" height="190" rx="18" fill="#FFFFFF" stroke="#6F9B87" stroke-width="5"/>
+  <rect x="360" y="145" width="160" height="26" rx="8" fill="#E4EDF6"/>
+  <rect x="360" y="190" width="160" height="26" rx="8" fill="#E4EDF6"/>
+  <rect x="360" y="235" width="130" height="26" rx="8" fill="#DDEBDD"/>
+  <path d="M280 220 L330 220" stroke="#3B6EA8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M260 220 L300 180" stroke="#C9823B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M260 220 L300 260" stroke="#4F8A70" stroke-width="8" stroke-linecap="round"/>
+</svg>
