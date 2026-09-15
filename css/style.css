@@ -1,24 +1,31 @@
 :root {
+  /* Base */
   --color-background: #0b0f14;
   --color-surface: #11161d;
   --color-surface-hover: #171e27;
 
-  --color-text: #f1f5f9;
+  /* Text */
+  --color-text: #eef2f7;
   --color-text-muted: #8b98a7;
 
-  --color-primary: #4f8cff;
-  --color-primary-hover: #6ba0ff;
+  /* Brand */
+  --color-primary: #5b8def;
+  --color-primary-hover: #79a3ff;
 
-  --color-secondary: #64748b;
-  --color-highlight: #172338;
+  /* Secondary / neutral */
+  --color-secondary: #657386;
+  --color-highlight: #172236;
 
-  --color-success: #3ccf91;
-  --color-warning: #f0a35b;
-  --color-danger: #ef6b73;
+  /* Semantic */
+  --color-success: #3dcc8f;
+  --color-warning: #e9a15a;
+  --color-danger: #ed6b75;
 
-  --color-border: #26313d;
-  --color-border-subtle: #1b242e;
+  /* Borders */
+  --color-border: #27313d;
+  --color-border-subtle: #1b232d;
 
+  /* Effects */
   --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
